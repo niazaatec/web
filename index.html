@@ -11,33 +11,35 @@
 <body>
 
 <!-- ================= HEADER / NAVBAR ================= -->
-<header class="main-header">
-    <div class="header-container">
-        <!-- Logo -->
-        <div class="logo-area">
-            <img src="C:\Users\POSX\Desktop\niazaa\niazaa 1 yellow.ai.png" alt="Niazaa Logo" class="logo-img">
-            <div class="logo-text">
-                <h1>NIAZAA</h1>
-                <span>Technology Pvt. Ltd.</span>
-            </div>
-        </div>
+<header class="pro-navbar">
+  <div class="nav-wrap">
 
-        <!-- Hamburger Menu Icon (Mobile) -->
-        <div class="menu-icon" onclick="toggleMenu()">☰</div>
-
-        <!-- Navigation Links -->
-        <nav id="nav-menu" class="nav-links">
-            <a href="#home" class="nav-item">Home</a>
-            <a href="#about" class="nav-item">About</a>
-            <a href="#services" class="nav-item">Services</a>
-            <a href="#features" class="nav-item">Features</a>
-            <a href="#clients" class="nav-item">Clients</a>
-            <a href="#pricing" class="nav-item">Pricing</a>
-            <a href="#contact" class="nav-item">Contact</a>
-        </nav>
+    <!-- Logo -->
+    <div class="nav-logo">
+      <img src="images/logo.png" alt="Niazaa Technology">
+      <span>Niazaa Technology</span>
     </div>
-</header>
 
+    <!-- Navigation -->
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#products">Products</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact" class="nav-btn">Contact</a>
+    </nav>
+
+    <!-- Mobile Menu Icon -->
+    <div class="nav-toggle" onclick="toggleNav()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+</header>
 
 <section id="home" class="home">
     <div class="home-overlay">
@@ -49,32 +51,174 @@
     </div>
 </section>
 
-<section id="about">
-    <h2>About Niazaa Technology</h2>
-    <p>
-        Niazaa Technology Pvt. Ltd. provides innovative POS systems,
-        restaurant management solutions, web development, and
-        digital business services.
-    </p>
-</section>
+<!-- ================= ABOUT US ================= -->
+<section id="about" class="about-section">
+    <div class="container">
+        <h2 class="section-title">About Niazaa Technology</h2>
 
-<section id="services">
-    <h2>Our Services</h2>
-    <div class="services-container">
-        <div class="card">
-            <h3>POS & RMS</h3>
-            <p>Billing, inventory, and restaurant automation.</p>
-        </div>
-        <div class="card">
-            <h3>Web Development</h3>
-            <p>Responsive and professional websites.</p>
-        </div>
-        <div class="card">
-            <h3>Smart Displays</h3>
-            <p>Digital signage and advertising solutions.</p>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    <strong>Niazaa Technology Pvt. Ltd.</strong> is a fast-growing technology solutions company
+                    dedicated to helping businesses grow through smart, reliable, and affordable digital solutions.
+                    We specialize in <strong>POS systems, Restaurant Management Software (RMS),
+                    Web Development, Smart Media Displays, and Business Automation</strong>.
+                </p>
+
+                <p>
+                    Our mission is to empower small and medium businesses with modern technology,
+                    free training, and complete hardware support. With a strong focus on customer
+                    satisfaction, Niazaa delivers end-to-end solutions—from setup to long-term support.
+                </p>
+
+                <ul class="about-list">
+                    <li>✔ Affordable & Reliable Technology</li>
+                    <li>✔ Free Training & Lifetime Support</li>
+                    <li>✔ Complete Business Automation</li>
+                    <li>✔ Trusted by Restaurants & Retail Stores</li>
+                </ul>
+            </div>
+
+            <div class="about-image">
+                <img src="C:\Users\POSX\Desktop\niazaa\niazaa 1 yellow.ai.png" alt="About Niazaa Technology">
+            </div>
         </div>
     </div>
 </section>
+
+<!-- ================= CEO MESSAGE ================= -->
+<section id="ceo-message" class="ceo-section">
+    <div class="container">
+        <h2 class="section-title">Message from the CEO</h2>
+
+        <div class="ceo-content">
+            <div class="ceo-image">
+                <img src="C:\Users\POSX\Desktop\niazaa\ceo.png" alt="Mudassar Niaz - CEO Niazaa Technology">
+            </div>
+
+            <div class="ceo-text">
+                <p>
+                    At <strong>Niazaa Technology Pvt. Ltd.</strong>, our mission is to empower businesses
+                    with affordable, reliable, and modern technology solutions.
+                </p>
+
+                <p>
+                    We understand the challenges faced by restaurants, cafés, and retail businesses.
+                    That’s why we designed our POS & RMS systems to be simple, powerful, and scalable.
+                </p>
+
+                <p>
+                    Our goal is not just to sell software, but to build <strong>long-term partnerships</strong>
+                    through trust, support, and innovation.
+                </p>
+
+                <h4>— Mudassar Niaz</h4>
+                <span>CEO, Niazaa Technology Pvt. Ltd.</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ================= WHY CHOOSE NIAZAA ================= -->
+<section id="why-niazaa" class="why-section">
+    <div class="container">
+        <h2 class="section-title">Why Choose Niazaa</h2>
+
+        <div class="why-cards">
+            <div class="why-card">
+                <h3>🚀 Affordable Pricing</h3>
+                <p>One-time setup with low monthly charges, perfect for startups and growing businesses.</p>
+            </div>
+
+            <div class="why-card">
+                <h3>🧩 Complete Business Solution</h3>
+                <p>POS, RMS, inventory, reporting, and smart automation in one system.</p>
+            </div>
+
+            <div class="why-card">
+                <h3>🎓 Free Training & Support</h3>
+                <p>We provide free training and continuous customer support.</p>
+            </div>
+
+            <div class="why-card">
+                <h3>🖥️ Free Hardware</h3>
+                <p>Tablet, keyboard, mouse, and accessories included—no hidden costs.</p>
+            </div>
+
+            <div class="why-card">
+                <h3>📊 Business Growth Focus</h3>
+                <p>Real-time reports and insights to help you make smarter decisions.</p>
+            </div>
+
+            <div class="why-card">
+                <h3>🤝 Trusted by Clients</h3>
+                <p>Hundreds of businesses rely on Niazaa for daily operations.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- ================= SERVICES & PRODUCTS ================= -->
+<!-- ================= SERVICES ================= -->
+<section id="services" class="services-section">
+    <div class="container">
+        <h2 class="section-title">Our Products & Services</h2>
+
+        <div class="services-grid">
+
+            <!-- Service 1: POS -->
+            <div class="service-card" onclick="openModal('pos')">
+                <img src="C:\Users\POSX\Desktop\niazaa\jpg100-t4-width800.jpg" alt="POS System">
+                <h3>POS & RMS</h3>
+            </div>
+
+            <!-- Service 2: Web -->
+            <div class="service-card" onclick="openModal('web')">
+                <img src="images/web.png" alt="Web Development">
+                <h3>Web Development</h3>
+            </div>
+
+            <!-- Service 3: Smart Display -->
+            <div class="service-card" onclick="openModal('smd')">
+                <img src="images/display.png" alt="Smart Media Display">
+                <h3>Smart Displays</h3>
+            </div>
+
+            <!-- Service 4: Free Hardware -->
+            <div class="service-card" onclick="openModal('hardware')">
+                <img src="images/hardware.png" alt="Free Hardware">
+                <h3>Free Hardware</h3>
+            </div>
+
+            <!-- Service 5: Training -->
+            <div class="service-card" onclick="openModal('training')">
+                <img src="images/training.png" alt="Training">
+                <h3>Free Training & Support</h3>
+            </div>
+
+            <!-- Service 6: Business Automation -->
+            <div class="service-card" onclick="openModal('business')">
+                <img src="images/business.png" alt="Business Automation">
+                <h3>Business Automation</h3>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= MODAL ================= -->
+<div id="serviceModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div id="modal-body">
+            <!-- Content will be injected via JS -->
+        </div>
+    </div>
+</div>
+
+
 <!-- ================= FEATURES ================= -->
 <section id="features" class="section gray">
     <h2>Key Features</h2>
@@ -86,7 +230,7 @@
     <div class="features-grid">
 
         <div class="feature-box">
-            <img src="images/favicon.png" alt="POS Feature">
+            <img src="C:\Users\POSX\Downloads\ChatGPT Image Dec 26, 2025, 02_05_00 AM.png" alt="POS Feature">
             <h3>All-in-One POS</h3>
             <p>Fast billing, inventory control, and real-time sales reports.</p>
         </div>
@@ -197,7 +341,7 @@
 
 <!-- WhatsApp Floating Button -->
 <a href="https://wa.me/923198658758" class="whatsapp-btn" target="_blank">
-    <img src="C:\Users\POSX\Desktop\niazaa\whatsp.png" alt="WhatsApp">
+    <img src="C:\Users\POSX\Desktop\niazaa\ChatGPT Image Dec 25, 2025, 10_18_26 PM.png" alt="WhatsApp">
 </a>
 
 <footer>
