@@ -121,7 +121,7 @@ section {
 .home {
   position: relative;
   height: 100vh;
-  background: url("C:/Users/POSX/Downloads/ChatGPT Image Dec 26, 2025, 10_53_28 PM.png")
+  background: url("ChatGPT Image Dec 26, 2025, 10_53_28 PM.png")
     no-repeat center center/cover;
   display: flex;
   align-items: center;
@@ -1220,3 +1220,4 @@ body {
     display: block;
   }
 }
+
