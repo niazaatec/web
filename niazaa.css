@@ -7,16 +7,31 @@ body {
 }
 
 /* ================= HEADER / NAVBAR ================= */
+/* ================= GLOBAL ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
 
+body {
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* ================= PRO NAVBAR ================= */
 .pro-navbar {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   background: #0b3c5d;
-  z-index: 999;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
 
+/* ================= NAV WRAP ================= */
 .nav-wrap {
   max-width: 1300px;
   margin: auto;
@@ -26,29 +41,29 @@ body {
   justify-content: space-between;
 }
 
-/* Logo */
-
+/* ================= LOGO ================= */
 .nav-logo img {
   width: 62px;
-  margin-right: 12px;
+  height: auto;
 }
 
-/* Links */
+/* ================= NAV LINKS ================= */
 .nav-links {
   display: flex;
   align-items: center;
   gap: 28px;
+  transition: left 0.3s ease;
 }
 
 .nav-links a {
   color: #ffb703;
   text-decoration: none;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 18px;
   position: relative;
+  transition: color 0.3s;
 }
 
-/* Underline hover */
 .nav-links a::after {
   content: "";
   position: absolute;
@@ -64,64 +79,97 @@ body {
   width: 100%;
 }
 
-/* CTA Button */
+/* ================= CTA BUTTON ================= */
 .nav-btn {
   background: #fff;
   color: #ffb703 !important;
-  padding: 8px 18px;
+  padding: 8px 20px;
   border-radius: 30px;
   font-weight: 600;
+  transition: all 0.3s ease;
 }
 
-/* Mobile Toggle */
+.nav-btn:hover {
+  background: #ffb703;
+  color: #fff !important;
+}
+
+/* ================= MOBILE TOGGLE ================= */
 .nav-toggle {
   display: none;
   flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 22px;
   cursor: pointer;
 }
 
 .nav-toggle span {
-  width: 26px;
+  width: 100%;
   height: 3px;
   background: #fff;
-  margin: 4px 0;
-  border-radius: 10px;
+  border-radius: 3px;
+  transition: 0.3s;
 }
 
-/* ===== MOBILE ===== */
+/* ================= MOBILE MENU ================= */
 @media (max-width: 900px) {
   .nav-links {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 260px;
+    height: 100vh;
     background: #0b3c5d;
     flex-direction: column;
     gap: 20px;
-    padding: 25px 0;
-    display: none;
+    padding: 70px 20px;
+    transition: left 0.3s ease;
+    z-index: 999;
   }
 
   .nav-links.active {
-    display: flex;
+    left: 0;
+  }
+
+  .nav-links a {
+    font-size: 20px;
   }
 
   .nav-toggle {
     display: flex;
   }
+
+  body.nav-open {
+    overflow: hidden;
+  }
 }
 
-/* ===== SECTIONS ===== */
+/* ================= SECTIONS ================= */
 section {
   padding: 60px 20px;
   text-align: center;
 }
 
+/* ================= OPTIONAL: HAMBURGER ANIMATION ================= */
+.nav-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
 /* ================= HOME / HERO ================= */
 .home {
   position: relative;
   height: 100vh;
-  background: url("ChatGPT Image Dec 26, 2025, 10_53_28 PM.png")
+  background: url("C:/Users/POSX/Desktop/niazaa/images/background.png")
     no-repeat center center/cover;
   display: flex;
   align-items: center;
@@ -1198,26 +1246,10 @@ body {
   }
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
-@media (max-width: 768px) {
-  nav {
-    display: none;
-    flex-direction: column;
-    background: #0b3c5d;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    text-align: center;
-  }
 
-  nav a {
-    padding: 15px;
-    display: block;
-  }
 
-  .menu-icon {
-    display: block;
-  }
-}
+
+
+
+
 
