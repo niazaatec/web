@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="niazaa.css">
   </head>
   <body>
+
+
+      
     <!-- Example button -->
     <button onclick="buyNow('POS Software')">Buy Now</button>
     <button onclick="getQuote('RMS')">Get Quote</button>
     <!-- Script must be here, at the end of body -->
     <script>
-      var WHATSAPP_NUMBER = "923198658758";
+      var WHATSAPP_NUMBER = "923098658758";
 
       function openWhatsApp(message) {
         var encodedMessage = encodeURIComponent(message);
@@ -72,36 +75,44 @@ Thank you.
     </script>
     <body>
       <!-- ================= HEADER / NAVBAR ================= -->
-      <header class="pro-navbar">
-        <div class="nav-wrap">
-          <!-- Logo -->
-          <div class="nav-logo">
-            <img src="Copy_of_niazaa_1_yellow.ai__1_-removebg-preview.png" alt="Niazaa Technology">
-          </div>
-          <!-- Navigation -->
-          <nav class="nav-links" id="navLinks">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#products">Products</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#clients">Clients</a>
-            <a href="https://wa.me/923198658758" class="nav-btn">Contact Us</a>
-          </nav>
-          <!-- Mobile Menu Icon -->
-          <div class="nav-toggle" onclick="toggleNav()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </header>
+<!-- ================= HEADER / NAVBAR ================= -->
+<header class="pro-navbar">
+  <div class="nav-wrap">
+    <!-- Logo -->
+    <div class="nav-logo">
+      <a href="#home">
+        <img src="images/logo.png" alt="Niazaa Technology">
+      </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      
+      <a href="#services-products">Our Products</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#clients"> Our Clients</a>
+      <a href="#why-niazaa">Why Niazaa</a>
+      <a href="#contact-us" class="nav-btn">Contact Us</a>
+    </nav>
+
+    <!-- Mobile Menu Icon -->
+    <div class="nav-toggle" onclick="toggleNav()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+
       <section id="home" class="home">
         <div class="home-overlay">
           <div class="home-content">
             <h1>Affordable & Reliable Technology Solutions</h1>
             <p>POS • RMS • Web Development • Smart Displays</p>
-            <button onclick="welcome()">Get Started</button>
+            
           </div>
         </div>
       </section>
@@ -146,7 +157,7 @@ Thank you.
         <!-- CEO SECTION -->
         <div class="about-box reveal">
           <div class="ceo-wrap">
-            <img src="ceo.png" class="ceo-image-float" alt="Mudassar Niaz">
+            <img src="C:\Users\POSX\Desktop\niazaa\images\ceo.png" class="ceo-image-float" alt="Mudassar Niaz">
             <h2>Mudassar Niaz</h2>
             <h4>Founder & Chief Executive Officer</h4>
             <p class="justify"> Born on <strong>June 4, 2004</strong> in Mecload Gunj, Bahawalnagar, Mudassar Niaz completed his education at <strong>Punjab Daanish School, Chishtian</strong>, later studying <strong>Computer Science at FAST NUCES Islamabad</strong>. </p>
@@ -195,13 +206,14 @@ Thank you.
         </div>
       </section>
       <!-- ================= SERVICES & PRODUCTS ================= -->
-      <section class="services-products">
-        <h2>Our Services & Products</h2>
-        <p class="section-subtitle"> Smart RMS, POS & Technology Solutions by Niazaa Technology </p>
+      <section id="services-products" class="services-products">
+  <h2>Our Services & Products</h2>
+  <p class="section-subtitle"> Smart RMS, POS & Technology Solutions by Niazaa Technology </p>
+
         <div class="card-grid">
           <!-- RMS -->
           <div class="card">
-            <img src="ChatGPT Image Jan 1, 2026, 12_16_41 AM.png" alt="Restaurant Management System">
+            <img src="C:\Users\POSX\Desktop\niazaa\images\pos.png" alt="Restaurant Management System">
             <h3>Restaurant Management System (RMS)</h3>
             <p>Complete restaurant automation with billing, inventory & reports.</p>
             <span class="price">PKR 25,000</span>
@@ -212,7 +224,7 @@ Thank you.
           </div>
           <!-- POS -->
           <div class="card">
-            <img src="ChatGPT Image Jan 1, 2026, 12_20_22 AM.png" alt="POS Software">
+            <img src="C:\Users\POSX\Desktop\niazaa\images\rms.png" alt="POS Software">
             <h3>POS Software</h3>
             <p>Fast & reliable billing system for shops and restaurants.</p>
             <span class="price">PKR 16,000</span>
@@ -223,7 +235,7 @@ Thank you.
           </div>
           <!-- Smart Media Display -->
           <div class="card">
-            <img src="ChatGPT Image Jan 1, 2026, 12_28_47 AM.png" alt="Smart Media Display">
+            <img src="C:\Users\POSX\Desktop\niazaa\images\smd.png" alt="Smart Media Display">
             <h3>Smart Media Display (SMD)</h3>
             <p>Digital menu boards & advertising displays.</p>
             <span class="price">PKR 45,000</span>
@@ -234,7 +246,7 @@ Thank you.
           </div>
           <!-- Web Development -->
           <div class="card">
-            <img src="ChatGPT Image Jan 1, 2026, 07_14_43 AM.png" alt="Web Development">
+            <img src="C:\Users\POSX\Desktop\niazaa\images\web.png" alt="Web Development">
             <h3>Web Development</h3>
             <p>Professional websites for businesses & restaurants.</p>
             <span class="price">Starting from PKR 30,000</span>
@@ -313,39 +325,52 @@ Thank you.
         <div class="client-slider-wrapper">
           <div class="client-slider">
             <div class="slide">
-              <img src="Juicy_Juice_Logo_HD (1).png" alt="Client 1">
+              <img src="C:\Users\POSX\Desktop\niazaa\images\bjr.png" alt="Client 1">
             </div>
             <div class="slide">
-              <img src="images (1).png" alt="Client 2">
+              <img src="images/burger.png" alt="Client 2">
             </div>
             <div class="slide">
-              <img src="download__2_-removebg-preview.png" alt="Client 3">
+              <img src="C:\Users\POSX\Desktop\niazaa\images\jaidi.png" alt="Client 3">
             </div>
             <div class="slide">
-              <img src="download (1).jpg" alt="Client 4">
+              <img src="C:\Users\POSX\Desktop\niazaa\images\lasani.jpg" alt="Client 4">
             </div>
             <div class="slide">
-              <img src="BJR Logo.png" alt="Client 5">
+              <img src="C:\Users\POSX\Desktop\niazaa\images\nora.png" alt="Client 5">
             </div>
             <!-- Duplicate slides for infinite scroll effect -->
-             <div class="slide">
-              <img src="Juicy_Juice_Logo_HD (1).png" alt="Client 1">
+            <div class="slide">
+              <img src="C:\Users\POSX\Desktop\niazaa\images\bjr.png" alt="Client 1">
             </div>
             <div class="slide">
-              <img src="images (1).png" alt="Client 2">
+              <img src="images/burger.png" alt="Client 2">
             </div>
             <div class="slide">
-              <img src="download__2_-removebg-preview.png" alt="Client 3">
+              <img src="C:\Users\POSX\Desktop\niazaa\images\jaidi.png" alt="Client 3">
             </div>
             <div class="slide">
-              <img src="download (1).jpg" alt="Client 4">
+              <img src="C:\Users\POSX\Desktop\niazaa\images\lasani.jpg" alt="Client 4">
             </div>
             <div class="slide">
-              <img src="BJR Logo.png" alt="Client 5">
-            </div> 
+              <img src="C:\Users\POSX\Desktop\niazaa\images\nora.png" alt="Client 5">
+            </div>
+          </div>
         </div>
       </section>
-      <!-- ================= CONTACT US ================= -->
+
+    
+      <!-- WhatsApp Floating Button -->
+ 
+      <a href="https://wa.me/923198658758" class="whatsapp-btn" target="_blank">
+        <img src="C:\Users\POSX\Desktop\niazaa\images\whatsapp.png" alt="WhatsApp">
+      </a>
+      <!-- Contact Us Label -->
+      <div class="whatsapp-text" id="whatsappText"> Contact Us </div>
+
+
+
+<!-- ================= CONTACT US ================= -->
       <section id="contact-us" class="contact-section">
         <div class="contact-container reveal">
           <h2>Contact <span>Us</span>
@@ -355,15 +380,6 @@ Thank you.
           <p class="contact-note"> * Your information is safe and will only be used to contact you. </p>
         </div>
       </section>
-      <!-- WhatsApp Floating Button -->
-      <!-- WhatsApp Button -->
-      <!-- WhatsApp Button -->
-      <!-- WhatsApp Button -->
-      <a href="https://wa.me/923198658758" class="whatsapp-btn" target="_blank">
-        <img src="ChatGPT Image Dec 25, 2025, 10_18_26 PM.png" alt="WhatsApp">
-      </a>
-      <!-- Contact Us Label -->
-      <div class="whatsapp-text" id="whatsappText"> Contact Us </div>
       <footer class="dark-footer">
         <div class="footer-container">
           <!-- About -->
@@ -392,6 +408,10 @@ Thank you.
               </li>
             </ul>
           </div>
+
+
+
+          
           <!-- Contact Info -->
           <div class="footer-column">
             <h4>Contact Us</h4>
@@ -419,8 +439,3 @@ Thank you.
       <script src="niazaa.js"></script>
     </body>
 </html>
-
-
-
-
-
