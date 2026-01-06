@@ -169,7 +169,7 @@ section {
 .home {
   position: relative;
   height: 100vh;
-  background: url("C:/Users/POSX/Desktop/niazaa/images/background.png")
+  background: url("background.png")
     no-repeat center center/cover;
   display: flex;
   align-items: center;
@@ -1245,6 +1245,7 @@ body {
     grid-template-columns: 2fr 1fr 1fr 1.5fr;
   }
 }
+
 
 
 
