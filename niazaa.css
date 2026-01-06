@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 body {
@@ -28,7 +28,7 @@ body {
   width: 100%;
   background: #0b3c5d;
   z-index: 1000;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* ================= NAV WRAP ================= */
@@ -164,13 +164,11 @@ section {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-
 /* ================= HOME / HERO ================= */
 .home {
   position: relative;
   height: 100vh;
-  background: url("background.png")
-    no-repeat center center/cover;
+  background: url("background.png") no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1245,12 +1243,3 @@ body {
     grid-template-columns: 2fr 1fr 1fr 1.5fr;
   }
 }
-
-
-
-
-
-
-
-
-
